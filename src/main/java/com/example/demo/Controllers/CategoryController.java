@@ -43,7 +43,7 @@ private final CategoryService categoryService;
 	public ResponseEntity<Category> updateCategory(@PathVariable("id") Long id, @RequestBody Category category){
 		return ResponseEntity.status(HttpStatus.OK).body(categoryService.updateCategory(id, category));
 	}
-	// here is perform delete mapping
+	// here  perform delete mapping
 	@DeleteMapping("/{id}")
 	public ResponseEntity<String> deleteCategory(@PathVariable("id") Long id){
 		categoryService.deleteCategory(id);
